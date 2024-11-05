@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>喵.tw</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        font-family: Arial, sans-serif;
+        margin: 0; /* 移除預設邊距 */
+        background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+        background-size: 1400% 1400%;
+        animation: Gradient 15s ease infinite;
+    }
+    .marquee {
+        font-size: 200px; /* 增加字體大小 */
+        animation: spin 1s linear infinite; /* 加快旋轉速度 */
+        color: white; /* 讓文字更突出 */
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    @keyframes Gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: white; /* 提高可讀性 */
+    }
+</style>
+</head>
+<body>
+<div class="marquee">喵</div>
+<footer>By Steven Meow </footer>
+<script>
+    // 如果需要添加更多JS功能，可以在這裡撰寫
+</script>
+</body>
+</html>
+
